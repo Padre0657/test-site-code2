@@ -9,7 +9,7 @@
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: 'Inter', sans-serif;
-      background: #0b1628;
+      background: #1a0a0a;
       color: #e2e8f0;
       min-height: 100vh;
       overflow-x: hidden;
@@ -17,9 +17,9 @@
     .particles { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none; }
     .particle {
       position: absolute;
-      background: rgba(56, 189, 248, 0.5);
+      background: rgba(248, 56, 56, 0.5);
       border-radius: 50%;
-      box-shadow: 0 0 6px rgba(56, 189, 248, 0.3);
+      box-shadow: 0 0 6px rgba(248, 56, 56, 0.3);
       animation: float linear infinite;
     }
     @keyframes float {
@@ -30,9 +30,9 @@
     }
     .bg-glow {
       position: fixed; top: -50%; left: -50%; width: 200%; height: 200%;
-      background: radial-gradient(circle at 30% 50%, rgba(14, 165, 233, 0.12) 0%, transparent 50%),
-                  radial-gradient(circle at 70% 30%, rgba(56, 189, 248, 0.08) 0%, transparent 40%),
-                  radial-gradient(circle at 50% 80%, rgba(2, 132, 199, 0.06) 0%, transparent 40%);
+      background: radial-gradient(circle at 30% 50%, rgba(220, 38, 38, 0.12) 0%, transparent 50%),
+                  radial-gradient(circle at 70% 30%, rgba(248, 56, 56, 0.08) 0%, transparent 40%),
+                  radial-gradient(circle at 50% 80%, rgba(185, 28, 28, 0.06) 0%, transparent 40%);
       animation: glow 15s ease-in-out infinite alternate;
       z-index: 0;
     }
@@ -44,13 +44,13 @@
     header { text-align: center; padding: 3rem 0 2rem; }
     .logo {
       display: inline-flex; align-items: center; gap: 0.5rem;
-      background: linear-gradient(135deg, #0ea5e9, #38bdf8);
+      background: linear-gradient(135deg, #dc2626, #f87171);
       -webkit-background-clip: text; -webkit-text-fill-color: transparent;
       font-size: 0.9rem; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 1.5rem;
     }
     .logo::before {
       content: ''; display: inline-block; width: 8px; height: 8px;
-      background: #38bdf8; border-radius: 50%; box-shadow: 0 0 12px #38bdf8;
+      background: #f87171; border-radius: 50%; box-shadow: 0 0 12px #f87171;
       animation: pulse 2s ease-in-out infinite; -webkit-text-fill-color: initial;
     }
     @keyframes pulse {
@@ -59,7 +59,7 @@
     }
     h1 {
       font-size: 3rem; font-weight: 700; line-height: 1.1; margin-bottom: 1rem;
-      background: linear-gradient(135deg, #fff 0%, #7dd3fc 100%);
+      background: linear-gradient(135deg, #fff 0%, #fca5a5 100%);
       -webkit-background-clip: text; -webkit-text-fill-color: transparent;
     }
     .subtitle {
@@ -70,11 +70,11 @@
       display: flex; align-items: center; justify-content: center; gap: 0.5rem;
       margin-bottom: 3rem; animation: fadeInUp 0.8s ease-out 0.3s both;
     }
-    .status-dot { width: 10px; height: 10px; background: #38bdf8; border-radius: 50%; box-shadow: 0 0 15px rgba(56, 189, 248, 0.5); }
-    .status-text { font-size: 0.85rem; color: #38bdf8; font-weight: 500; letter-spacing: 0.5px; }
+    .status-dot { width: 10px; height: 10px; background: #f87171; border-radius: 50%; box-shadow: 0 0 15px rgba(248, 113, 113, 0.5); }
+    .status-text { font-size: 0.85rem; color: #f87171; font-weight: 500; letter-spacing: 0.5px; }
     .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; margin-bottom: 2.5rem; }
     .card {
-      background: rgba(56, 189, 248, 0.03); border: 1px solid rgba(56, 189, 248, 0.08);
+      background: rgba(248, 56, 56, 0.03); border: 1px solid rgba(248, 56, 56, 0.08);
       border-radius: 16px; padding: 1.75rem; backdrop-filter: blur(10px);
       transition: all 0.3s ease; animation: fadeInUp 0.6s ease-out both;
     }
@@ -82,8 +82,8 @@
     .card:nth-child(2) { animation-delay: 0.2s; }
     .card:nth-child(3) { animation-delay: 0.3s; }
     .card:hover {
-      border-color: rgba(56, 189, 248, 0.3); transform: translateY(-4px);
-      box-shadow: 0 20px 40px rgba(14, 165, 233, 0.15);
+      border-color: rgba(248, 56, 56, 0.3); transform: translateY(-4px);
+      box-shadow: 0 20px 40px rgba(220, 38, 38, 0.15);
     }
     .card-icon { font-size: 1.8rem; margin-bottom: 1rem; }
     .card h3 { font-size: 0.95rem; font-weight: 600; margin-bottom: 0.5rem; color: #f1f5f9; }
@@ -96,31 +96,31 @@
     .flow-step { display: flex; flex-direction: column; align-items: center; gap: 0.4rem; }
     .flow-step .icon-box {
       width: 52px; height: 52px; border-radius: 12px; display: flex; align-items: center;
-      justify-content: center; font-size: 1.3rem; border: 1px solid rgba(56, 189, 248, 0.12);
+      justify-content: center; font-size: 1.3rem; border: 1px solid rgba(248, 56, 56, 0.12);
     }
-    .flow-step:nth-child(1) .icon-box { background: rgba(14, 165, 233, 0.15); }
-    .flow-step:nth-child(3) .icon-box { background: rgba(56, 189, 248, 0.12); }
-    .flow-step:nth-child(5) .icon-box { background: rgba(2, 132, 199, 0.15); }
-    .flow-step:nth-child(7) .icon-box { background: rgba(3, 105, 161, 0.15); }
+    .flow-step:nth-child(1) .icon-box { background: rgba(220, 38, 38, 0.15); }
+    .flow-step:nth-child(3) .icon-box { background: rgba(248, 56, 56, 0.12); }
+    .flow-step:nth-child(5) .icon-box { background: rgba(185, 28, 28, 0.15); }
+    .flow-step:nth-child(7) .icon-box { background: rgba(153, 27, 27, 0.15); }
     .flow-step span { font-size: 0.7rem; color: #64748b; font-weight: 500; }
     .flow-arrow { color: #334155; font-size: 1.2rem; margin: 0 0.75rem; margin-bottom: 1rem; }
     .infra-bar {
-      background: rgba(56, 189, 248, 0.03); border: 1px solid rgba(56, 189, 248, 0.08);
+      background: rgba(248, 56, 56, 0.03); border: 1px solid rgba(248, 56, 56, 0.08);
       border-radius: 16px; padding: 1.5rem 2rem; margin-bottom: 2.5rem;
       animation: fadeInUp 0.6s ease-out 0.4s both;
     }
     .infra-bar h3 { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 2px; color: #475569; margin-bottom: 1.25rem; }
     .infra-items { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
     .infra-item { display: flex; align-items: center; gap: 0.6rem; }
-    .infra-item .dot { width: 6px; height: 6px; border-radius: 50%; background: #38bdf8; box-shadow: 0 0 8px rgba(56, 189, 248, 0.4); }
+    .infra-item .dot { width: 6px; height: 6px; border-radius: 50%; background: #f87171; box-shadow: 0 0 8px rgba(248, 113, 113, 0.4); }
     .infra-item .label { font-size: 0.8rem; color: #94a3b8; }
     .infra-item .value { font-size: 0.8rem; color: #e2e8f0; font-weight: 500; }
     .version-badge {
       position: fixed; bottom: 1.5rem; right: 1.5rem;
-      background: linear-gradient(135deg, #0ea5e9, #38bdf8);
+      background: linear-gradient(135deg, #dc2626, #f87171);
       color: #fff; font-size: 0.75rem; font-weight: 600;
       padding: 0.4rem 1rem; border-radius: 20px;
-      box-shadow: 0 4px 15px rgba(14, 165, 233, 0.3);
+      box-shadow: 0 4px 15px rgba(220, 38, 38, 0.3);
       animation: fadeInUp 0.6s ease-out 1s both;
     }
     footer { text-align: center; padding: 2rem 0; animation: fadeInUp 0.6s ease-out 0.6s both; }
@@ -191,7 +191,7 @@
 
     <footer><p>Forge numerique ANFSI &mdash; Deploye via la plateforme GitOps</p></footer>
   </div>
-  <div class="version-badge">v2.0</div>
+  <div class="version-badge">v3.0</div>
 
   <script>
     const pc = document.getElementById('particles');
